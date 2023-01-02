@@ -228,9 +228,9 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins_regular"
+                android:text="Delete User Account"
                 android:textAlignment="center"
                 android:textColor="@color/ic_launcher_background"
-                android:text="Delete Account"
                 android:textSize="15sp" />
 
         </RelativeLayout>
