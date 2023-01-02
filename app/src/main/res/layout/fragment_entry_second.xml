@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/entrytwobgm"
+    tools:context=".entry.EntryFragmentSecond">
+
+    <LinearLayout
+        android:id="@+id/patient_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/patientAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/patientanimation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:fontFamily="@font/entry_two_fonts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#024880"
+                android:layout_marginLeft="65dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="I'm a Patient"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nextPatient"
+                android:layout_width="0dp"
+                android:padding="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="30dp"
+                android:layout_height="50dp"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                app:lottie_rawRes="@raw/test" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clinic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/clinicAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/clinicanimation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:fontFamily="@font/entry_two_fonts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="0dp"
+                android:textColor="#024880"
+                android:layout_marginLeft="65dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="This is a Clinic"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nextClinic"
+                android:layout_width="0dp"
+                android:padding="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="30dp"
+                android:layout_height="50dp"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                app:lottie_rawRes="@raw/test" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doctor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/doctorAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/doctoranimation" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:fontFamily="@font/entry_two_fonts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="0dp"
+                android:textColor="#024880"
+                android:layout_marginLeft="65dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="I'm a Doctor"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nextDoctor"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="30dp"
+                android:layout_height="50dp"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                app:lottie_rawRes="@raw/test" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
